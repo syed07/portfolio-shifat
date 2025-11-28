@@ -1,29 +1,116 @@
-<!DOCTYPE html>
-<html>
+]<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Projects | Syed Shifat Bukhari</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Syed Shifat Bukhari | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-<h1>My Projects</h1>
+  <!-- Header -->
+  <header class="reveal">
+  <div class="header-inner">
+    <div class="title-block">
+      <h1 class="main-heading">Syed Shifat Bukhari</h1>
+      <p class="subheading">Web Developer & AI Learner</p>
+    </div>
+    <div class="photo-block">
+      <img src="images/me.jpg" alt="My Photo" class="profile-photo">
+    </div>
+  </div>
+  <!-- Dark Mode Toggle -->
+  <button id="darkToggle" class="dark-toggle reveal">🌙</button>
 </header>
 
-<section>
-<div class="project-card">
-<h2>Portfolio Website</h2>
-<p>Responsive personal website built with HTML, CSS, and JavaScript.</p>
-</div>
 
-<div class="project-card">
-<h2>AI Chatbot</h2>
-<p>In development...</p>
-</div>
+  <!-- Navigation -->
+  <nav class="nav reveal">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<br>
-<a class="btn" href="index.html">⬅ Back</a>
+  <!-- About -->
+<section id="about" class="section reveal">
+  <h2>About Me</h2>
+  <div class="card reveal">
+    <p>
+      I am <strong>Syed Shifat Bukhari</strong>, a Web Developer and Computer Science student exploring AI,
+      robotics, and real-world software development. I like building fast projects and learning new technologies.
+    </p>
+  </div>
 </section>
 
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box reveal">HTML</div>
+      <div class="skill-box reveal">CSS</div>
+      <div class="skill-box reveal">Python</div>
+      <div class="skill-box reveal">C/C++</div>
+      <div class="skill-box reveal">SEO</div>
+      <div class="skill-box reveal">Backlinking</div>
+      <div class="skill-box reveal">Prompt Engineering</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+
+    <div class="card reveal">
+      <h3>Portfolio Website</h3>
+      <p>A clean and responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
+      <a class="btn" href="projects.html">View Project</a>
+    </div>
+
+    <div class="card reveal">
+      <h3>Wallpaper Download Website</h3>
+      <p>Building a Python-based wallpaper download website for Android, iOS, PC, and Mac.</p>
+      <span class="muted">Coming Soon</span>
+    </div>
+
+    <div class="card reveal">
+      <h3>AI Chatbot</h3>
+      <p>Building a functional AI chatbot using Python and JavaScript.</p>
+      <span class="muted">Coming Soon</span>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section reveal">
+    <h2>Achievements</h2>
+    <div class="card reveal">
+      <h3>Google Developers Group</h3>
+      <p>Secured <strong>Third Position</strong> for Mind Mirrors: An Innovative Project Idea.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+ <!-- Contact -->
+<section id="contact" class="section reveal">
+  <h2>Contact</h2>
+  <p>Email: <strong>syedshifat10@gmail.com</strong></p>
+  <div class="socials">
+    <a class="btn reveal" href="https://github.com/syed07" target="_blank">GitHub</a>
+    <a class="btn reveal" href="https://www.linkedin.com/in/syed-shifat-bukhari-a44b26274" target="_blank">LinkedIn</a>
+    <a class="btn reveal" href="https://www.instagram.com/_bukhari_07" target="_blank">Instagram</a>
+    <a class="btn reveal" href="files/Syed.Shifat.Bukhari.resume.pdf" target="_blank">View Resume</a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer reveal">
+  © 2025 Syed Shifat Bukhari | All Rights Reserved
+</footer>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
+
