@@ -1,0 +1,288 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #cfe6ff; /* sky blue */
+    text-align: center; /* FIXES LEFT SHIFT */
+}
+
+/* Fade-in animation for sections */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.2s; }
+.fade-in:nth-child(2) { animation-delay: 0.4s; }
+.fade-in:nth-child(3) { animation-delay: 0.6s; }
+.fade-in:nth-child(4) { animation-delay: 0.8s; }
+.fade-in:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+header {
+    background: #0047ab;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.main-heading {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.subheading {
+    font-size: 1.5em;
+    color: #a8ceff;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+/* Navigation */
+nav {
+    background: #003a8c;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em; /* bigger font */
+    padding: 8px 15px; /* extra spacing */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1); /* small pop effect */
+}
+
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Sections */
+/* Sections */
+section {
+    padding: 60px 40px; /* more padding for spacious look */
+    text-align: center;
+    margin: 30px auto;
+    max-width: 1200px; /* increase width */
+    background: rgba(255,255,255,0.2);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    max-width: 900px;
+    margin: auto;        /* centers everything */
+    padding: 40px 20px;
+}
+
+
+
+section:hover {
+    transform: translateY(-5px); /* subtle lift effect on hover */
+}
+
+/* Project Cards */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;  /* more spacing between project cards */
+    margin-top: 30px;
+}
+
+
+.project-card {
+    background: #fff;
+    padding: 25px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Project cards (light mode) */
+    background: rgba(255, 255, 255, 0.8);
+   
+
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Buttons */
+.btn {
+    background: linear-gradient(45deg, #0047ab, #0066ff);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 8px;
+    display: inline-block;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #0066ff, #0047ab);
+}
+
+
+/* Footer */
+footer {
+    background: #003a8c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode */
+.dark {
+    background: #111;
+    color: #e9e9e9;
+}
+
+.dark header, .dark nav, .dark footer {
+    background: #222;
+}
+/* ---- FIX PROJECT CARD VISIBILITY ---- */
+
+/* Light mode cards */
+.project-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Text inside cards */
+.project-card h3,
+.project-card p,
+.project-card a {
+    color: #000;
+}
+
+/* ---- DARK MODE FIX ---- */
+body.dark .project-card {
+    background: rgba(30, 30, 30, 0.85);   /* dark card background */
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+}
+
+body.dark .project-card h3,
+body.dark .project-card p,
+body.dark .project-card a {
+    color: #fff;                         /* bright white text */
+}
+.about-section {
+    padding: 60px 20px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-image img {
+    width: 260px;
+    height: 260px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+.fade {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+#projects {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+}
+#skills ul {
+    list-style: square;      /* or disc */
+    text-align: left;        /* FIXES the issue */
+    max-width: 400px;
+    margin: 20px auto;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+#skills {
+    text-align: center; /* keep the title centered */
+}
+
+#skills ul {
+    list-style: square;
+    margin: 20px auto;
+    padding-left: 0;
+    width: fit-content; 
+    text-align: left !important;   /* <-- this forces left align */
+    display: block !important;     /* overrides flex/center rules */
+}
+
+#skills li {
+    margin: 8px 0;
+    font-size: 18px;
+}
