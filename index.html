@@ -1,100 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Shifat Bukhari | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Syed Shifat Bukhari | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="fade-in">
-    <h1 class="main-heading">Syed Shifat Bukhari</h1>
-    <p class="subheading">Web Developer & AI Learner</p>
-    <button id="darkToggle">🌙 Dark Mode</button>
-
-</section>
+  <!-- Header -->
+  <header class="reveal">
+  <div class="header-inner">
+    <div class="title-block">
+      <h1 class="main-heading">Syed Shifat Bukhari</h1>
+      <p class="subheading">Web Developer & AI Learner</p>
+    </div>
+    <div class="photo-block">
+      <img src="images/me.jpg" alt="My Photo" class="profile-photo">
+    </div>
+  </div>
+  <!-- Dark Mode Toggle -->
+  <button id="darkToggle" class="dark-toggle reveal">🌙</button>
 </header>
 
-<nav class="fade-in">
+
+  <!-- Navigation -->
+  <nav class="nav reveal">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
     <a href="#contact">Contact</a>
-</nav>
-<section id="projects" class="fade">
-<h2>Projects</h2>
+  </nav>
 
-    <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A clean and responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
-        <a href="#" class="btn">View Project</a>
-    </div>
-
-    <div class="project-card">
-        <h3>Wallpaper Download Website </h3>
-        <p>Building a Python-based website to download wallpapers for Android, iOS, PC, and Mac.</p>
-        <a href="#" class="btn">Coming Soon</a>
-    </div>
-
-    <div class="project-card">
-        <h3>AI Chatbot</h3>
-        <p>Building a functional AI chatbot using Python and JavaScript.</p>
-        <a href="#" class="btn">Coming Soon</a>
-    </div>
+  <!-- About -->
+<section id="about" class="section reveal">
+  <h2>About Me</h2>
+  <div class="card reveal">
+    <p>
+      I am <strong>Syed Shifat Bukhari</strong>, a Web Developer and Computer Science student exploring AI,
+      robotics, and real-world software development. I like building fast projects and learning new technologies.
+    </p>
+  </div>
 </section>
 
-<section id="skills" class="fade">
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
     <h2>Skills</h2>
- <ul>
-    <li>HTML / CSS / JavaScript</li>
-    <li>Python</li>
-    <li>AI & Machine Learning (Beginner)</li>
-    <li>Web Development</li>
-    <li>Prompt Engineer</li>
-</ul>
-</section>
-
-<section id="projects" class="fade">
-    
-
-<section id="about" class="about-section fade">
-    <div class="about-container">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>
-                I am <strong>Syed Shifat Bukhari</strong>, a  Web Developer and 
-                Computer Science student exploring AI, robotics, and real-world software development.
-                I like buiding fast projects and learning new technologies.
-            </p>
-        </div>
-
-        <div class="about-image">
-            <img src="images/me.jpg" alt="My Photo">
-        </div>
+    <div class="skills-grid">
+      <div class="skill-box reveal">HTML</div>
+      <div class="skill-box reveal">CSS</div>
+      <div class="skill-box reveal">Python</div>
+      <div class="skill-box reveal">C/C++</div>
+      <div class="skill-box reveal">SEO</div>
+      <div class="skill-box reveal">Backlinking</div>
+      <div class="skill-box reveal">Prompt Engineering</div>
     </div>
-</section>
+  </section>
 
-</section>
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
 
-<section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <p>Email: <strong>syedshifat10@gmail.com</strong></p>
-    <div class="social">
-        <a class="btn" href="https://github.com/YOURUSERNAME" target="_blank">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/syed-shifat-bukhari-a44b26274/" target="_blank">LinkedIn</a>
-        <a class="btn" href="https://www.instagram.com/_bukhari_07/" target="_blank">Instagram</a>
-       <a href="files/Syed.Shifat.Bukhari.resume.pdf" class="btn" target="_blank">View Resume</a>
-
-</a>
-
+    <div class="card reveal">
+      <h3>Portfolio Website</h3>
+      <p>A clean and responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
+      <a class="btn" href="projects.html">View Project</a>
     </div>
+
+    <div class="card reveal">
+      <h3>Wallpaper Download Website</h3>
+      <p>Building a Python-based wallpaper download website for Android, iOS, PC, and Mac.</p>
+      <span class="muted">Coming Soon</span>
+    </div>
+
+    <div class="card reveal">
+      <h3>AI Chatbot</h3>
+      <p>Building a functional AI chatbot using Python and JavaScript.</p>
+      <span class="muted">Coming Soon</span>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section reveal">
+    <h2>Achievements</h2>
+    <div class="card reveal">
+      <h3>Google Developers Group</h3>
+      <p>Secured <strong>Third Position</strong> for Mind Mirrors: An Innovative Project Idea.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+ <!-- Contact -->
+<section id="contact" class="section reveal">
+  <h2>Contact</h2>
+  <p>Email: <strong>syedshifat10@gmail.com</strong></p>
+  <div class="socials">
+    <a class="btn reveal" href="https://github.com/syed07" target="_blank">GitHub</a>
+    <a class="btn reveal" href="https://www.linkedin.com/in/syed-shifat-bukhari-a44b26274" target="_blank">LinkedIn</a>
+    <a class="btn reveal" href="https://www.instagram.com/_bukhari_07" target="_blank">Instagram</a>
+    <a class="btn reveal" href="files/Syed.Shifat.Bukhari.resume.pdf" target="_blank">View Resume</a>
+  </div>
 </section>
 
-<footer class="fade-in">
-    © 2025 Syed Shifat Bukhari | All Rights Reserved
+
+<!-- Footer -->
+<footer class="footer reveal">
+  © 2025 Syed Shifat Bukhari | All Rights Reserved
 </footer>
 
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
