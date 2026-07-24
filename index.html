@@ -1,116 +1,808 @@
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Syed Shifat Bukhari | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Syed Shifat Bukhari | Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="reveal">
-  <div class="header-inner">
-    <div class="title-block">
-      <h1 class="main-heading">Syed Shifat Bukhari</h1>
-      <p class="subheading">Web Developer & AI Learner</p>
-    </div>
-    <div class="photo-block">
-      <img src="images/me.jpg" alt="My Photo" class="profile-photo">
-    </div>
-  </div>
-  <!-- Dark Mode Toggle -->
-  <button id="darkToggle" class="dark-toggle reveal">🌙</button>
+<div id="progress-bar"></div>
+
+<div id="cursor-glow"></div>
+
+<header>
+
+<div class="logo">
+
+SB
+
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#about">About</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#novara">NOVARA</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+<button id="theme-toggle">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
 </header>
 
+<section id="home" class="hero">
 
-  <!-- Navigation -->
-  <nav class="nav reveal">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="hero-content">
 
-  <!-- About -->
-<section id="about" class="section reveal">
-  <h2>About Me</h2>
-  <div class="card reveal">
-    <p>
-       <strong>Syed Shifat Bukhari</strong>, a Web Developer and Computer Science student exploring AI,
-      robotics, and real-world software development. Like building fast projects and learning new technologies.
-    </p>
-  </div>
+<span class="hero-tag">
+
+WELCOME TO MY PORTFOLIO
+
+</span>
+
+<h1>
+
+Syed
+
+<span>Shifat</span>
+
+Bukhari
+
+</h1>
+
+<h2>
+
+<span id="typing"></span>
+
+</h2>
+
+<p>
+
+Syed Shifat Bukhari is a fifth semester Robotics & Artificial Intelligence undergraduate passionate about software engineering, Artificial Intelligence, robotics and game development.
+
+He is the founder of <strong>BUKHARI STUDIOS</strong> and is currently building <strong>NOVARA</strong>, an ambitious open-world adventure game.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="primary-btn">
+
+Explore Portfolio
+
+</a>
+
+<a href="files/Syed_Shifat_Bukhari_Resume.pdf"
+
+class="secondary-btn"
+
+target="_blank">
+
+Download Resume
+
+</a>
+
+</div>
+
+<div class="hero-socials">
+
+<a href="https://github.com/syed07" target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/in/syed-shifat-bukhari-a44b26274"
+
+target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="https://www.instagram.com/_bukhari_07"
+
+target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<div class="photo-border">
+
+<img src="images/profile.png"
+
+alt="Syed Shifat Bukhari"
+
+class="profile-photo">
+
+</div>
+
+<div class="experience-box">
+
+<h2 class="counter" data-target="5">0</h2>
+
+<p>Semester</p>
+
+</div>
+
+</div>
+
 </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section reveal">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-box reveal">HTML</div>
-      <div class="skill-box reveal">CSS</div>
-      <div class="skill-box reveal">Python</div>
-      <div class="skill-box reveal">C/C++</div>
-      <div class="skill-box reveal">SEO</div>
-      <div class="skill-box reveal">Backlinking</div>
-      <div class="skill-box reveal">Prompt Engineering</div>
-    </div>
-  </section>
+<section class="stats">
 
-  <!-- Projects -->
-  <section id="projects" class="section reveal">
-    <h2>Projects</h2>
+<div class="stat">
 
-    <div class="card reveal">
-      <h3>Portfolio Website</h3>
-      <p>A clean and responsive personal portfolio built using HTML, CSS, and JavaScript.</p>
-      <a class="btn" href="projects.html">View Project</a>
-    </div>
+<h2 class="counter"
 
-    <div class="card reveal">
-      <h3>Wallpaper Download Website</h3>
-      <p>Building a Python-based wallpaper download website for Android, iOS, PC, and Mac.</p>
-      <span class="muted">Coming Soon</span>
-    </div>
+data-target="4">0</h2>
 
-    <div class="card reveal">
-      <h3>AI Chatbot</h3>
-      <p>Building a functional AI chatbot using Python and JavaScript.</p>
-      <span class="muted">Coming Soon</span>
-    </div>
-  </section>
+<p>Certificates</p>
 
-  <!-- Achievements -->
-  <section id="achievements" class="section reveal">
-    <h2>Achievements</h2>
-    <div class="card reveal">
-      <h3>Google Developers Group</h3>
-      <p>Secured <strong>Third Position</strong> for Mind Mirrors: An Innovative Project Idea.</p>
-    </div>
-  </section>
+</div>
 
-  <!-- Contact -->
- <!-- Contact -->
-<section id="contact" class="section reveal">
-  <h2>Contact</h2>
-  <p>Email: <strong>syedshifat10@gmail.com</strong></p>
-  <div class="socials">
-    <a class="btn reveal" href="https://github.com/syed07" target="_blank">GitHub</a>
-    <a class="btn reveal" href="https://www.linkedin.com/in/syed-shifat-bukhari-a44b26274" target="_blank">LinkedIn</a>
-    <a class="btn reveal" href="https://www.instagram.com/_bukhari_07" target="_blank">Instagram</a>
-    <a class="btn reveal" href="files/Syed.Shifat.Bukhari.resume.pdf" target="_blank">View Resume</a>
-  </div>
+<div class="stat">
+
+<h2 class="counter"
+
+data-target="7">0</h2>
+
+<p>Technologies</p>
+
+</div>
+
+<div class="stat">
+
+<h2 class="counter"
+
+data-target="4">0</h2>
+
+<p>Projects</p>
+
+</div>
+
+<div class="stat">
+
+<h2 class="counter"
+
+data-target="1">0</h2>
+
+<p>Game in Development</p>
+
+</div>
+
+</section>
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="section-title">
+
+<p>ABOUT ME</p>
+
+<h2>Who Am I?</h2>
+
+</div>
+
+<div class="about-container">
+
+<div class="about-card">
+
+<h3>Professional Profile</h3>
+
+<p>
+
+Syed Shifat Bukhari is a B.Tech student pursuing Robotics & Artificial Intelligence. His interests include Artificial Intelligence, Web Development, Robotics, Cloud Computing and Game Development. He enjoys solving real-world problems through technology and continuously learning modern software tools.
+
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>Career Objective</h3>
+
+<p>
+
+To build innovative AI solutions, create impactful software products and establish BUKHARI STUDIOS as a technology and game development company while continuously expanding technical expertise.
+
+</p>
+
+</div>
+
+</div>
+
 </section>
 
+<!-- ================= SKILLS ================= -->
 
-<!-- Footer -->
-<footer class="footer reveal">
-  © 2025 Syed Shifat Bukhari | All Rights Reserved
+<section id="skills">
+
+<div class="section-title">
+
+<p>MY SKILLS</p>
+
+<h2>Technical Skills</h2>
+
+</div>
+
+<div class="skills-grid">
+
+<div class="skill-box">
+
+<i class="fa-brands fa-html5"></i>
+
+<h3>HTML</h3>
+
+<div class="progress">
+
+<div class="fill html"></div>
+
+</div>
+
+</div>
+
+<div class="skill-box">
+
+<i class="fa-brands fa-css3-alt"></i>
+
+<h3>CSS</h3>
+
+<div class="progress">
+
+<div class="fill css"></div>
+
+</div>
+
+</div>
+
+<div class="skill-box">
+
+<i class="fa-brands fa-js"></i>
+
+<h3>JavaScript</h3>
+
+<div class="progress">
+
+<div class="fill js"></div>
+
+</div>
+
+</div>
+
+<div class="skill-box">
+
+<i class="fa-brands fa-python"></i>
+
+<h3>Python</h3>
+
+<div class="progress">
+
+<div class="fill python"></div>
+
+</div>
+
+</div>
+
+<div class="skill-box">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>C / C++</h3>
+
+<div class="progress">
+
+<div class="fill cpp"></div>
+
+</div>
+
+</div>
+
+<div class="skill-box">
+
+<i class="fa-solid fa-robot"></i>
+
+<h3>Artificial Intelligence</h3>
+
+<div class="progress">
+
+<div class="fill ai"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section class="experience">
+
+<div class="section-title">
+
+<p>EXPERIENCE</p>
+
+<h2>Professional Journey</h2>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="circle"></div>
+
+<div class="timeline-content">
+
+<h3>Human Resources Team</h3>
+
+<h4>India's International Moment to Unite Nations (IIMUN)</h4>
+
+<p>
+
+Worked in volunteer management, recruitment and event coordination while strengthening communication, leadership and teamwork skills.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="circle"></div>
+
+<div class="timeline-content">
+
+<h3>SEO Specialist</h3>
+
+<h4>Jetsetters</h4>
+
+<p>
+
+Worked on SEO optimization, backlink building, keyword research and website performance improvement.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="circle"></div>
+
+<div class="timeline-content">
+
+<h3>Founder</h3>
+
+<h4>BUKHARI STUDIOS</h4>
+
+<p>
+
+Currently building AI applications, software products and the open-world adventure game NOVARA.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects">
+
+<div class="section-title">
+
+<p>PROJECTS</p>
+
+<h2>Featured Projects</h2>
+
+</div>
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>Personal Portfolio</h3>
+
+<p>
+
+Modern responsive portfolio developed using HTML, CSS and JavaScript.
+
+</p>
+
+<span>Completed</span>
+
+</div>
+
+<div class="project-card">
+
+<i class="fa-solid fa-comments"></i>
+
+<h3>AI Chatbot</h3>
+
+<p>
+
+An intelligent chatbot currently being developed using Python and JavaScript.
+
+</p>
+
+<span>In Development</span>
+
+</div>
+
+<div class="project-card">
+
+<i class="fa-solid fa-image"></i>
+
+<h3>Wallpaper Website</h3>
+
+<p>
+
+A wallpaper downloading platform for Android, iOS, Windows and macOS.
+
+</p>
+
+<span>In Development</span>
+
+</div>
+
+<div class="project-card">
+
+<i class="fa-solid fa-gamepad"></i>
+
+<h3>NOVARA</h3>
+
+<p>
+
+A story-driven open-world adventure game under development by BUKHARI STUDIOS.
+
+</p>
+
+<span>Coming Soon</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= NOVARA ================= -->
+
+<section id="novara">
+
+<div class="novara-card">
+
+<p>CURRENTLY DEVELOPING</p>
+
+<h1>NOVARA</h1>
+
+<h3>Open World Adventure Game</h3>
+
+<p>
+
+NOVARA is an ambitious open-world adventure game focused on exploration, storytelling and immersive gameplay. Developed under BUKHARI STUDIOS, the project is currently in active development.
+
+</p>
+
+<div class="game-tags">
+
+<span>Unity</span>
+
+<span>C#</span>
+
+<span>Adventure</span>
+
+<span>Open World</span>
+
+<span>Coming Soon</span>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= BUKHARI STUDIOS ================= -->
+
+<section id="studio">
+
+<div class="section-title">
+
+<p>MY VISION</p>
+
+<h2>BUKHARI STUDIOS</h2>
+
+</div>
+
+<div class="studio-box">
+
+<h2>Create • Innovate • Inspire</h2>
+
+<p>
+
+BUKHARI STUDIOS is an independent software and game development initiative focused on Artificial Intelligence, innovative software solutions and immersive gaming experiences. Its flagship project is <strong>NOVARA</strong>, an open-world adventure game currently under development.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= ACHIEVEMENTS ================= -->
+
+<section id="achievements">
+
+<div class="section-title">
+
+<p>ACHIEVEMENTS</p>
+
+<h2>Certificates & Recognition</h2>
+
+</div>
+
+<div class="achievement-grid">
+
+<div class="achievement-card">
+
+<i class="fa-solid fa-medal"></i>
+
+<h3>Google Developers Group</h3>
+
+<p>
+
+Third Position for the innovative project <strong>Mind Mirrors</strong>.
+
+</p>
+
+</div>
+
+<div class="achievement-card">
+
+<i class="fa-solid fa-cloud"></i>
+
+<h3>AWS Cloud Club</h3>
+
+<p>
+
+Participation in AWS workshops and technical events.
+
+</p>
+
+</div>
+
+<div class="achievement-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h3>IIMUN</h3>
+
+<p>
+
+Human Resources Team Member and Event Volunteer.
+
+</p>
+
+</div>
+
+<div class="achievement-card">
+
+<i class="fa-solid fa-certificate"></i>
+
+<h3>Professional Certificate</h3>
+
+<p>
+
+Additional technical certification successfully completed.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<div class="section-title">
+
+<p>CONTACT</p>
+
+<h2>Let's Connect</h2>
+
+</div>
+
+<div class="contact-wrapper">
+
+<div class="contact-info">
+
+<div class="contact-item">
+
+<i class="fa-solid fa-envelope"></i>
+
+<div>
+
+<h3>Email</h3>
+
+<p>syedshifat10@gmail.com</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<div>
+
+<h3>Location</h3>
+
+<p>Kashmir/chandigarh, India</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+<div>
+
+<h3>Education</h3>
+
+<p>B.Tech Robotics & Artificial Intelligence</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="contact-buttons">
+
+<a href="files/Syed_Shifat_Bukhari_Resume.pdf"
+
+class="primary-btn"
+
+target="_blank">
+
+<i class="fa-solid fa-file-arrow-down"></i>
+
+Download Resume
+
+</a>
+
+<a href="mailto:syedshifat10@gmail.com"
+
+class="secondary-btn">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Email Me
+
+</a>
+
+</div>
+
+<div class="social-icons">
+
+<a href="https://github.com/syed07" target="_blank">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+<a href="https://www.linkedin.com/in/syed-shifat-bukhari-a44b26274"
+
+target="_blank">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="https://www.instagram.com/_bukhari_07"
+
+target="_blank">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-logo">
+
+SB
+
+</div>
+
+<h2>
+
+Syed Shifat Bukhari
+
+</h2>
+
+<p>
+
+Robotics & Artificial Intelligence Undergraduate
+
+</p>
+
+<p>
+
+Founder • BUKHARI STUDIOS
+
+</p>
+
+<p>
+
+© 2026 Syed Shifat Bukhari. All Rights Reserved.
+
+</p>
+
 </footer>
 
+<button id="scrollTop">
 
-  <script src="script.js"></script>
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<script src="script.js"></script>
+
 </body>
-</html>
 
+</html>
