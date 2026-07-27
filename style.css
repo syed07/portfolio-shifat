@@ -2184,3 +2184,14 @@ font-size:28px;
 will-change:transform;
 
 }
+.project-card a span{
+    color: #ffffff;
+}
+
+.project-card a:visited span{
+    color: #ffffff;
+}
+
+.project-card a:hover span{
+    color: #ffffff;
+}
